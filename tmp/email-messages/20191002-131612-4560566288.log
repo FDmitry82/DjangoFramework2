@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IEl2YW4=?=
+From: webmaster@localhost
+To: tset@local.local
+Date: Wed, 02 Oct 2019 08:16:12 -0000
+Message-ID: <157000417290.60849.1036316621812242332@Mac.local>
+
+Для подтверждения учетной записи Ivan     на портале http://localhost:8000 перейдите по ссылке:     
+http://localhost:8000/auth/verify/tset@local.local/8c34bc290c0f11473ad84ec022a605d71429733b/
+-------------------------------------------------------------------------------
