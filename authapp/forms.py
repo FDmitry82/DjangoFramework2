@@ -21,7 +21,7 @@ class ShopUserLoginForm(AuthenticationForm):
 class ShopUserRegisterForm(UserCreationForm):
     class Meta:
         model = ShopUser
-        fields = ('username', 'first_name', 'password1', 'password2', 'email', 'age', 'avatar')
+        fields = ('username', 'first_name', 'last_name', 'password1', 'password2', 'email', 'age', 'avatar')
 
     def __init__(self, *args, **kwargs):
         super(ShopUserRegisterForm, self).__init__(*args, **kwargs)
@@ -50,7 +50,7 @@ class ShopUserRegisterForm(UserCreationForm):
 class ShopUserEditForm(UserChangeForm):
     class Meta:
         model = ShopUser
-        fields = ('username', 'first_name', 'email', 'age', 'avatar', 'password')
+        fields = ('username', 'first_name', 'last_name', 'email', 'age', 'avatar', 'password')
 
     def __init__(self, *args, **kwargs):
         super(ShopUserEditForm, self).__init__(*args, **kwargs)
@@ -71,7 +71,7 @@ class ShopUserEditForm(UserChangeForm):
 class ShopUserProfileEditForm(forms.ModelForm):
     class Meta:
         model = ShopUserProfile
-        fields = ('tagline', 'aboutMe', 'gender')
+        fields = ('tagline', 'aboutMe', 'gender', 'address')
 
     def __init__(self, *args, **kwargs):
         super(ShopUserProfileEditForm, self).__init__(*args, **kwargs)
