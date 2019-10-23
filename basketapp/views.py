@@ -28,7 +28,7 @@ def basket_add(request, pk):
         return HttpResponseRedirect(reverse('products:product', args=[pk]))
 
     product = get_object_or_404(Product, pk=pk)
-    basket = Basket.objects.filter(user=request.user, product=product).first()
+    basket = Basket.objects.filter(user=request.user, product=product).first().select_related()
 
     if not basket:
         basket = Basket(user=request.user, product=product)
@@ -51,7 +51,7 @@ def basket_remove(request, pk):
 def basket_edit(request, pk, quantity):
     if request.is_ajax():
         print(f'{pk} - {quantity}')
-        new_basket_item = Basket.objects.get(pk=int(pk))
+        new_basket_item = Basket.objects.get(pk=int(pk)).select_related()
 
         if quantity > 0:
             new_basket_item.quantity = quantity
@@ -59,7 +59,7 @@ def basket_edit(request, pk, quantity):
         else:
             new_basket_item.delete()
 
-        basket_items = Basket.objects.filter(user=request.user).order_by('product__category')
+        basket_items = Basket.objects.filter(user=request.user).order_by('product__category').select_related()
 
         content = {
             'basket_items': basket_items,

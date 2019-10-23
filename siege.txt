@@ -1,0 +1,52 @@
+(django2) fds@django:~/geekshop$ siege -f /home/fds/geekshop/urls.txt -d1 -r29 -c1
+** SIEGE 4.0.4
+** Preparing 1 concurrent users for battle.
+The server is now under siege...
+Transactions:                    336 hits
+Availability:                  98.53 %
+Elapsed time:                  17.71 secs
+Data transferred:              10.05 MB
+Response time:                  0.01 secs
+Transaction rate:              18.97 trans/sec
+Throughput:                     0.57 MB/sec
+Concurrency:                    0.26
+Successful transactions:         333
+Failed transactions:               5
+Longest transaction:            0.30
+Shortest transaction:           0.00
+
+
+(django2) fds@django:~/geekshop$ siege -f /home/fds/geekshop/urls.txt -d0 -r25 -c50
+** SIEGE 4.0.4
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Transactions:                  14800 hits
+Availability:                  98.67 %
+Elapsed time:                 186.40 secs
+Data transferred:             433.63 MB
+Response time:                  0.61 secs
+Transaction rate:              79.40 trans/sec
+Throughput:                     2.33 MB/sec
+Concurrency:                   48.74
+Successful transactions:       14617
+Failed transactions:             200
+Longest transaction:            9.81
+Shortest transaction:           0.00
+
+
+(django2) fds@django:~/geekshop$ siege -f /home/fds/geekshop/urls.txt -d0 -r50 -c50
+** SIEGE 4.0.4
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Transactions:                  28000 hits
+Availability:                  98.25 %
+Elapsed time:                 380.21 secs
+Data transferred:             857.95 MB
+Response time:                  0.67 secs
+Transaction rate:              73.64 trans/sec
+Throughput:                     2.26 MB/sec
+Concurrency:                   49.47
+Successful transactions:       27701
+Failed transactions:             500
+Longest transaction:           12.20
+Shortest transaction:           0.00

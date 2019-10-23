@@ -46,10 +46,10 @@ def user_update(request, pk):
 
     edit_user = get_object_or_404(ShopUser, pk=pk)
     if request.method == 'POST':
-        edit_form = ShopUserAdminEditForm(request.POST, request.FILES, instance=edit_user)
+        edit_form = ShopUserAdminEditForm(request.POST, request.FILES, instance=edit_user).select_related()
         if edit_form.is_valid():
             edit_form.save()
-            return HttpResponseRedirect(reverse('admin:user_update', args=[edit_user.pk]))
+            return HttpResponseRedirect(reverse('admin:user_update', args=[edit_user.pk])).select_related()
     else:
         edit_form = ShopUserAdminEditForm(instance=edit_user)
 
@@ -81,7 +81,7 @@ def user_delete(request, pk):
 def categories(request):
     title = 'админка/категории'
 
-    categories_list = ProductCategory.objects.all()
+    categories_list = ProductCategory.objects.all().select_related()
 
     content = {
         'title': title,
@@ -127,7 +127,7 @@ def products(request, pk):
     title = 'админка/продукт'
 
     category = get_object_or_404(ProductCategory, pk=pk)
-    products_list = Product.objects.filter(category__pk=pk).order_by('name')
+    products_list = Product.objects.filter(category__pk=pk).order_by('name').select_related()
 
     content = {
         'title': title,
@@ -148,10 +148,10 @@ def product_create(request, pk):
     category = get_object_or_404(ProductCategory, pk=pk)
 
     if request.method == 'POST':
-        product_form = ProductEditForm(request.POST, request.FILES)
+        product_form = ProductEditForm(request.POST, request.FILES).select_related()
         if product_form.is_valid():
             product_form.save()
-            return HttpResponseRedirect(reverse('admin:products', args=[pk]))
+            return HttpResponseRedirect(reverse('admin:products', args=[pk])).select_related()
     else:
         #задаем начальное значение категории в форме
         product_form = ProductEditForm(initial={'category': category})
@@ -167,10 +167,10 @@ def product_update(request, pk):
     edit_product = get_object_or_404(Product, pk=pk)
 
     if request.method == 'POST':
-        edit_form = ProductEditForm(request.POST, request.FILES, instance=edit_product)
+        edit_form = ProductEditForm(request.POST, request.FILES, instance=edit_product).select_related()
         if edit_form.is_valid():
             edit_form.save()
-            return HttpResponseRedirect(reverse('admin:product_update', args=[edit_product.pk]))
+            return HttpResponseRedirect(reverse('admin:product_update', args=[edit_product.pk])).select_related()
     else:
         edit_form = ProductEditForm(instance=edit_product)
 
@@ -187,7 +187,7 @@ def product_delete(request, pk):
     if request.method == 'POST':
         product.is_active = False
         product.save()
-        return HttpResponseRedirect(reverse('admin:products', args=[product.category.pk]))
+        return HttpResponseRedirect(reverse('admin:products', args=[product.category.pk])).select_related()
 
     content = {
         'title': title,
