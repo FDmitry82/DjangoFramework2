@@ -1,7 +1,8 @@
 from django import template
-from django.conf import settings
 
 register = template.Library()
+
+URL_PREFIX = '/media/'
 
 
 def media_folder_products(string):
@@ -12,8 +13,9 @@ def media_folder_products(string):
     if not string:
         string = 'products_images/default.jpg'
 
-    return f'{settings.MEDIA_URL}{string}'
+    new_string = "{}{}".format(URL_PREFIX, string)
 
+    return new_string
 
 @register.filter(name='media_folder_users')
 def media_folder_users(string):
@@ -24,7 +26,14 @@ def media_folder_users(string):
     if not string:
         string = 'users_avatars/default.jpg'
 
-    return f'{settings.MEDIA_URL}{string}'
+    new_string = "{}{}".format(URL_PREFIX, string)
+
+    return new_string
 
 
 register.filter('media_folder_products', media_folder_products)
+
+
+if __name__ == '__main__':
+    print(media_folder_products('products_images/product1.jpg'))
+    print(media_folder_products(''))

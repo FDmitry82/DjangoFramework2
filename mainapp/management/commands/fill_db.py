@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 from mainapp.models import ProductCategory, Product
 from authapp.models import ShopUser
-
+from mainapp.views import loadfromjson
 import json, os
 
 

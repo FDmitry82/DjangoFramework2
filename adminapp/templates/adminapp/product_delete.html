@@ -10,7 +10,9 @@
             <input class="btn btn-danger" type="submit" value="удалить">
         </form>
         <button class="btn btn-success">
-            <a href="{% url 'admin:products' object.pk %}">отмена</a>
+            <a href="{% url 'admin:products' product_to_delete.category.pk %}">
+                отмена
+            </a>
         </button>
     </div>
 {% endblock %}
