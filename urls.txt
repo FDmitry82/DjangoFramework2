@@ -1,0 +1,10 @@
+http://192.168.0.172:8787/
+http://192.168.0.172:8787/products/
+http://192.168.0.172:8787/contact/
+http://192.168.0.172:8787/products/category/1/
+http://192.168.0.172:8787/products/category/2/
+http://192.168.0.172:8787/products/category/3/
+http://192.168.0.172:8787/products/category/4/
+http://192.168.0.172:8787/basket/
+http://192.168.0.172:8787/order/
+http://192.168.0.172:8787/auth/edit/

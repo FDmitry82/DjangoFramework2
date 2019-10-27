@@ -1,0 +1,1040 @@
+(django2) fds@django:~/geekshop$ siege -f /home/fds/geekshop/urls.txt -d1 -r3 -c1 --debug
+** SIEGE 4.0.4: debugging enabled
+
+Copyright (C) 2017 by Jeffrey Fulmer, et al.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.
+
+** Preparing 1 concurrent users for battle.
+The server is now under siege...[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET / HTTP/1.1
+Host: 192.168.0.172:8787
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server-Timing: TimerPanel_utime=36.06500000000024; "User CPU time", TimerPanel_stime=0.0; "System CPU time", TimerPanel_total=36.06500000000024; "Total CPU time", TimerPanel_total_time=36.243438720703125; "Elapsed time", SQLPanel_sql_time=0.5445480346679688; "SQL 1 queries", CachePanel_total_time=0; "Cache 0 Calls"
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Set-Cookie: csrftoken=WWB1qThUOlWBe1uBN9aV3fiospIe3kG5kPDdWafPEnKZEzta3m09RnO0wF9TiHF4; expires=Wed, 21 Oct 2020 15:01:44 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+Content-Encoding: gzip
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.sql.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: application/javascript
+Content-Length: 121
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-79"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.timer.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: application/javascript
+Content-Length: 2754
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-ac2"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: application/javascript
+Content-Length: 13188
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-3384"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/toolbar.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/css
+Content-Length: 14835
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-39f3"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/print.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/css
+Content-Length: 41
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-29"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-3.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: image/jpeg
+Content-Length: 5127
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-1407"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-2.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: image/jpeg
+Content-Length: 6906
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-1afa"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/img/icon-hover.png HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: image/png
+Content-Length: 1718
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-6b6"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-1.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: image/jpeg
+Content-Length: 3718
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-e86"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/img/arrow.png HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: image/png
+Content-Length: 327
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-147"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/bootstrap.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: application/javascript
+Content-Length: 37045
+Last-Modified: Mon, 25 Jul 2016 10:53:30 GMT
+Connection: close
+ETag: "5795efaa-90b5"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/jquery-3.2.1.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: application/javascript
+Content-Length: 86659
+Last-Modified: Mon, 17 Jul 2017 08:01:54 GMT
+Connection: close
+ETag: "596c6ef2-15283"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/fonts/font-awesome/css/font-awesome.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/css
+Content-Length: 37414
+Last-Modified: Wed, 14 Nov 2018 17:07:27 GMT
+Connection: close
+ETag: "5bec564f-9226"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/style.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/css
+Content-Length: 30057
+Last-Modified: Wed, 09 Oct 2019 11:36:15 GMT
+Connection: close
+ETag: "5d9dc62f-7569"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:44 GMT
+Content-Type: text/css
+Content-Length: 121200
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-1d970"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /products/ HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server-Timing: TimerPanel_utime=78.025; "User CPU time", TimerPanel_stime=11.502000000000013; "System CPU time", TimerPanel_total=89.52700000000002; "Total CPU time", TimerPanel_total_time=89.95509147644043; "Elapsed time", SQLPanel_sql_time=2.6602745056152344; "SQL 3 queries", CachePanel_total_time=0; "Cache 0 Calls"
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Set-Cookie: csrftoken=1gZGAwsfnku9bQHWD09uet9IUen1wImhHEi0YuCmznKTGaiaz24WsQo2moyRlx0t; expires=Wed, 21 Oct 2020 15:01:45 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+Content-Encoding: gzip
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.sql.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: application/javascript
+Content-Length: 121
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-79"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.timer.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: application/javascript
+Content-Length: 2754
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-ac2"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: application/javascript
+Content-Length: 13188
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-3384"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/toolbar.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/css
+Content-Length: 14835
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-39f3"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/print.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/css
+Content-Length: 41
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-29"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-4.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/jpeg
+Content-Length: 7944
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-1f08"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-3.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/jpeg
+Content-Length: 5127
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-1407"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/img/icon-hover.png HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/png
+Content-Length: 1718
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-6b6"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-1.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/jpeg
+Content-Length: 3718
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-e86"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/img/arrow.png HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/png
+Content-Length: 327
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-147"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /media/products_images/product-2.jpg HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: image/jpeg
+Content-Length: 6906
+Last-Modified: Fri, 23 Nov 2018 19:24:54 GMT
+Connection: close
+ETag: "5bf85406-1afa"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/bootstrap.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: application/javascript
+Content-Length: 37045
+Last-Modified: Mon, 25 Jul 2016 10:53:30 GMT
+Connection: close
+ETag: "5795efaa-90b5"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/jquery-3.2.1.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: application/javascript
+Content-Length: 86659
+Last-Modified: Mon, 17 Jul 2017 08:01:54 GMT
+Connection: close
+ETag: "596c6ef2-15283"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/fonts/font-awesome/css/font-awesome.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/css
+Content-Length: 37414
+Last-Modified: Wed, 14 Nov 2018 17:07:27 GMT
+Connection: close
+ETag: "5bec564f-9226"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/style.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/css
+Content-Length: 30057
+Last-Modified: Wed, 09 Oct 2019 11:36:15 GMT
+Connection: close
+ETag: "5d9dc62f-7569"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:45 GMT
+Content-Type: text/css
+Content-Length: 121200
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-1d970"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /contact/ HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server-Timing: TimerPanel_utime=36.49400000000025; "User CPU time", TimerPanel_stime=0.0060000000000060005; "System CPU time", TimerPanel_total=36.500000000000256; "Total CPU time", TimerPanel_total_time=36.69571876525879; "Elapsed time", SQLPanel_sql_time=0; "SQL 0 queries", CachePanel_total_time=0; "Cache 0 Calls"
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Set-Cookie: csrftoken=UnQtTgFRpkcY4yyKEeEvm1g6lx1Zj2DuGL99buQFw44LyNF34H3eiKp2HOXpgeff; expires=Wed, 21 Oct 2020 15:01:46 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+Content-Encoding: gzip
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.sql.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: application/javascript
+Content-Length: 121
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-79"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.timer.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: application/javascript
+Content-Length: 2754
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-ac2"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/js/toolbar.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: application/javascript
+Content-Length: 13188
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-3384"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/toolbar.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/css
+Content-Length: 14835
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-39f3"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/debug_toolbar/css/print.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/css
+Content-Length: 41
+Last-Modified: Wed, 23 Oct 2019 14:15:32 GMT
+Connection: close
+ETag: "5db06084-29"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/bootstrap.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: application/javascript
+Content-Length: 37045
+Last-Modified: Mon, 25 Jul 2016 10:53:30 GMT
+Connection: close
+ETag: "5795efaa-90b5"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/js/jquery-3.2.1.min.js HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: application/javascript
+Content-Length: 86659
+Last-Modified: Mon, 17 Jul 2017 08:01:54 GMT
+Connection: close
+ETag: "596c6ef2-15283"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/fonts/font-awesome/css/font-awesome.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/css
+Content-Length: 37414
+Last-Modified: Wed, 14 Nov 2018 17:07:27 GMT
+Connection: close
+ETag: "5bec564f-9226"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/style.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/css
+Content-Length: 30057
+Last-Modified: Wed, 09 Oct 2019 11:36:15 GMT
+Connection: close
+ETag: "5d9dc62f-7569"
+Accept-Ranges: bytes
+
+
+[debug] browser.c:870 attempting connection to 192.168.0.172:8787
+[debug] browser.c:885 creating new socket:     192.168.0.172:8787
+[debug] browser.c:905 good socket connection:  192.168.0.172:8787
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: 192.168.0.172:8787
+Cookie: SameSite=Lax
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.4
+Connection: close
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 23 Oct 2019 15:01:46 GMT
+Content-Type: text/css
+Content-Length: 121200
+Last-Modified: Sat, 17 Nov 2018 11:17:30 GMT
+Connection: close
+ETag: "5beff8ca-1d970"
+Accept-Ranges: bytes
+
+
+
+Transactions:                     44 hits
+Availability:                 100.00 %
+Elapsed time:                   3.45 secs
+Data transferred:               1.08 MB
+Response time:                  0.01 secs
+Transaction rate:              12.75 trans/sec
+Throughput:                     0.31 MB/sec
+Concurrency:                    0.13
+Successful transactions:          44
+HTTP OK received:                 44
+Failed transactions:               0
+Longest transaction:            0.18
+Shortest transaction:           0.00
